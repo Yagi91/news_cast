@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="output.css" />
+    </head>
+    <body>
+        <section class="hidden container mx-auto lg:flex py-0 max-h-11 my-4 justify-between items-center text-xs">
+            <div class="space-x-3 flex items-center ">
+                <div class="inline-flex items-center gap-2">
+                    <img src="../assets/images/weather.svg" alt="">
+                    <p>15&deg;C New York</p>
+                </div>
+                <div class="inline-flex items-center gap-2">
+                    <img src="../assets/images/clock.svg" alt="">
+                    <p>Wednesday, 10 Jan 2022</p>
+                </div>
+                <div class="h-full bg-primary-500 text-white p-2">Breaking news</div>
+                <div class="inline-flex whitespace-nowrap items-center">
+                    <span>Indonesia says located black box recorders from crashed plane</span>
+                </div>
+            </div>
+            <div class="space-x-3">
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+            </div>
+            <!-- Contains the top which displays time, hidden with width < 768px -->
+        </section>
+        <section class="mx-auto container">
+            <!-- Contains the main logo and promo section. hidden on devices with width < 768px -->
+            <div class="hidden lg:block">
+                <div class="grid h-20 grid-cols-12">
+                    <div class="col-span-4 flex justify-start items-center">
+                        <div class="gap-4 items-center flex">
+                            <img src="../assets/images/logo.png" alt=""/>
+                            <h1 class="font-header font-bold text-4xl cursor-pointer">
+                                News<span class=" text-primary-500 font-header">cast</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-span-8 px-6 flex items-center justify-between bg-[url('./../assets/images/promo_cover.jpg')] bg-cover">
+                        <div class="text-white font-light text-sm">
+                            <p>Best selling block and magazine</p>
+                            <p>Theme of all time</p>
+                            <p class="font-header italic text-primary-600">Experience the change</p>
+                        </div>
+                        <div>
+                            <button class="bg-primary-500 hover:bg-primary-600 hover:transition-all text-white px-6 py-4">Purchase Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:mx-auto lg:container lg:my-6">
+            <!-- Contains the proper navigation bar -->
+            <div class="bg-ncDark flex justify-between lg:hidden p-3">
+                <!--Navbar for mobile -->
+                <div class="col-span-4 flex justify-start items-center">
+                    <div class="flex gap-4 items-center">
+                        <img src="../assets/images/logo.png" alt="">
+                        <h1 class="font-header font-bold text-white text-2xl cursor-pointer">
+                            News<span class=" text-primary-500 font-header">cast</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center cursor-pointer">
+                    <img src="../assets/images/menu_icon.svg"
+                         id="menu_toggle"
+                         width="24px"
+                         height="24px"
+                         alt=""/>
+                </div>
+            </div>
+            <div class="lg:flex items-center origin-top delay-300 scale-y-0 absolute inset-x-0 lg:static lg:scale-100 transition-transform justify-between bg-ncDark lg:pr-6"
+                 id="menu_container">
+                <div class="flex flex-col lg:flex-row">
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl active">Home</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">International</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">Sports</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">Opinion</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">Business</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">Youth</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">Entertainment</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">Lifestyle</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:delay-400  font-xl">Pages</a>
+                </div>
+                <div class="pb-4 lg:pb-0">
+                    <!-- Search form -->
+                    <form action="#" class="px-6">
+                        <input type="text"
+                               class="min-h-full w-full lg:w-auto p-4 bg-ncDark placeholder:text-gray-400 placeholder:font-light placeholder:text-xs text-gray-300 font-light text-sm border border-gray-600 outline-none"
+                               placeholder="Search for"/>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="lg:container lg:mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <div style="background-image: url('../assets/images/1.jpg')"
+                         class="bg-cover h-120 h-96">
+                        <div class="image-caption"></div>
+                    </div>
+                </div>
+                <div class="grid gap-4 grid-cols-2">
+                    <div style="background-image: url('../assets/images/2.jpg')"
+                         class="bg-cover h-48">
+                        <div class="image-caption"></div>
+                    </div>
+                    <div style="background-image: url('../assets/images/3.jpg')"
+                         class="bg-cover h-48">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="col-span-2 bg-cover h-44"
+                         style="background-image: url('../assets/images/4.jpg')">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let toggle = document.getElementById('menu_toggle');
+            let menuContainer = document.getElementById('menu_container');
+            toggle.addEventListener('click', () => {
+                menuContainer.classList.toggle('scale-y-0');
+            } , false)
+
+
+        </script>
+    </body>
+</html>
