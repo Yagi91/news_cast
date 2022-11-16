@@ -7,7 +7,7 @@
         <title>Welcome to Newscast | Home</title>
         <link rel="stylesheet" href="output.css" />
     </head>
-    <body>
+    <body class="min-h-screen">
         <section class="hidden container mx-auto lg:flex py-0 max-h-11 my-4 justify-between items-center text-xs">
             <div class="space-x-3 flex items-center ">
                 <div class="inline-flex items-center gap-2">
@@ -35,12 +35,12 @@
             <!-- Contains the main logo and promo section. hidden on devices with width < 768px -->
             <div class="grid h-20 grid-cols-12">
                 <div class="hidden lg:col-span-4 lg:flex justify-start items-center">
-                    <div class="gap-4 items-center flex">
+                    <a href="index.html" class="gap-4 items-center flex">
                         <img src="../assets/images/logo.png" alt=""/>
                         <h1 class="font-header font-bold text-4xl cursor-pointer">
                             News<span class=" text-primary-500 font-header">cast</span>
                         </h1>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-span-12 lg:col-span-8 px-6 flex items-center justify-between bg-[url('./../assets/images/promo_cover.jpg')] bg-cover">
                     <div class="text-white font-light text-xs lg:text-base py-2">
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <div class="hidden lg:grid gap-4 grid-cols-2">
-                    <a href="#" class="block">
+                    <a href="blog_detail.html" class="block">
                         <div style="background-image: url('../assets/images/2.jpg')"
                              class="bg-cover h-48 flex items-end justify-start hover:scale-95 duration-300 hover:transition cursor-pointer">
                             <div class="p-2">
@@ -134,7 +134,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="block">
+                    <a href="blog_detail.html" class="block">
                         <div style="background-image: url('../assets/images/3.jpg')"
                              class="bg-cover h-48 flex items-end justify-start hover:scale-95 duration-300 hover:transition cursor-pointer">
                             <div class="p-2">
@@ -148,7 +148,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="block col-span-2">
+                    <a href="blog_detail.html" class="block col-span-2">
                         <div style="background-image: url('../assets/images/4.jpg')"
                              class="bg-cover h-44 flex items-end justify-start hover:scale-95 duration-300 hover:transition cursor-pointer">
                             <div class="p-2">
@@ -920,7 +920,7 @@
                 </div>
             </div>
         </section>
-        <footer class=" bg-ncDark">
+        <footer class=" bg-ncDark ">
             <div class="container mx-auto px-4 py-8">
                 <div class="grid grid-cols-4 gap-2">
                     <div class="col-span-4 lg:col-span-1 space-y-8">
